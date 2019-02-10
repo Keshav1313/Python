@@ -6,7 +6,7 @@ import lib
 
 
 list_of_files = {}
-for ( "C:\\company_resume_files") as f in  #directory pathname anything we can pass
+for (r "C:\\company_resume_files") as f in  #directory pathname anything we can pass
 os.walk("f"):
     for filename in f:
         if filename.endswith('.txt'):
