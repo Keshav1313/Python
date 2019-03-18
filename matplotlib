@@ -21,3 +21,121 @@ plt.xlabel('x2')
 plt.ylabel('Amp(y2)')
 
 plt.show()
+
+
+#--------------------------------Cosine plot ----------------------------------
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+t=np.arange(0.0,2.0,0.01)
+
+s=1+np.cos(2*np.pi*t)
+
+plt.plot(t,s,'*')
+
+plt.xlabel('Time(t)')
+plt.ylabel('Voltage(mV)')
+plt.title('Cosine wave plot(cos(x))')
+plt.show()
+
+
+#--------------------------------Categorical Plotting---------------------------------------------
+
+names = ['group_a', 'group_b', 'group_c']
+values = [80, 40, 100]
+
+plt.figure(1, figsize=(9, 3))
+
+plt.subplot(131)
+plt.bar(names, values)
+plt.subplot(132)
+plt.scatter(names, values)
+plt.subplot(133)
+plt.plot(names, values)
+plt.suptitle('Categorical Plotting')
+plt.show()
+
+#---------------------------------Colorful round pattern------------------------------------------
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+theta = np.arange(0, 8*np.pi, 0.1)
+a = 1
+b = .2
+
+for dt in np.arange(0, 2*np.pi, np.pi/2.0):
+
+    x = a*np.cos(theta + dt)*np.exp(b*theta)
+    y = a*np.sin(theta + dt)*np.exp(b*theta)
+
+    dt = dt + np.pi/8.0
+
+    x2 = a*np.cos(theta + dt)*np.exp(b*theta)
+    y2 = a*np.sin(theta + dt)*np.exp(b*theta)
+
+    xf = np.concatenate((x, x2[::-1]))
+    yf = np.concatenate((y, y2[::-1]))
+
+    p1 = plt.fill(xf, yf)
+
+plt.show()
+
+
+#-------------------------------Histogram-----------------------------------------------------
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+ages = [2,50,70,30,35,43,44,60,25,40,45,50,55,62,7010,15,18,20,22]
+
+range = (0,100)
+bins = 10
+
+plt.hist(ages,bins,range,color='green',histtype='bar',rwidth=0.7)
+
+plt.xlabel('Ages')
+plt.ylabel('Bins')
+
+plt.title('Histogram Plot')
+
+plt.show()
+
+#--------------------------------Scatter Plotting------------------------------
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = [1,2,3,4,5,6,7,8,9,10]
+y = [2,4,5,6,8,7,10,12,11,3]
+
+plt.scatter(x,y,label='stars',color='green',marker = "*",s=30)
+
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+
+plt.title('Scatter Plot')
+
+plt.legend()
+
+plt.show()
+
+
+#-----------------------------------------PIE Chart with matplotlibs -----------------------------------
+
+import matplotlib.pyplot as plt
+
+activities = ['eat','sleep','work','play']
+              
+slices = [3,7,8,6]
+              
+colors = ['r','g','m','b']
+              
+plt.pie(slices, labels=activities, colors=colors,
+        radius=2.1,startangle=90,counterclock = True,wedgeprops = {'linewidth': 5},frame = False,
+       shadow=True,explode=(0.2,0.2,0,0),autopct='%1.2f%%')
+
+plt.legend()
+plt.show()    
+
+#all codes are executed in Python 3.6-----install required modules
