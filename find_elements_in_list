@@ -1,0 +1,12 @@
+def findelement(list):
+    de=[]
+    key=34
+    insert_key=90
+    for i in list:
+        if i==key:
+            de.append(insert_key)
+    else:
+        print('element not avaialble')
+    return (de)
+
+print(findelement([2,4,6,34,50]))
