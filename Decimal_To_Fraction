@@ -1,0 +1,12 @@
+function changeNumberToFn (num) {
+  let str = num.toString(10);  
+  let arr = str.split('.');
+  if (arr.length === 1) {
+      return arr[0] + '/1';
+  }
+  let partTwoLength = (arr[1].length);  
+  let tempArr = new Array(partTwoLength);
+  tempArr.fill(0);
+
+  return parseInt(arr[0] + '' + arr[1]) + '/1' + tempArr.join('');
+}
