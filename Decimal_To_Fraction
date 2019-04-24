@@ -26,3 +26,14 @@ print(float_to_ratio(0.001))
 output- (1, 1000)
 
 ----------------------------------Proper Fraction----------------------------------------------
+from fractions import Fraction    
+
+def dec_to_proper_frac(dec):
+    sign = "-" if dec < 0 else ""
+    frac = Fraction(abs(dec))
+    return (f"{sign}{frac.numerator // frac.denominator} "
+            f"{frac.numerator % frac.denominator}/{frac.denominator}")
+
+print(dec_to_proper_frac(3.75))
+
+Output - 3 3/4
