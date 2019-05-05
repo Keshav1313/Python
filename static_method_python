@@ -19,3 +19,13 @@ print('Product:', Calculator.multiplyNums(15, 110))
 
 
 Example - 2
+
+
+class Calculator:
+
+    # create addNumbers static method
+    @staticmethod
+    def multiplyNums(x, y):
+        return x + y
+
+print('Product:', Calculator.multiplyNums(15, 110))
