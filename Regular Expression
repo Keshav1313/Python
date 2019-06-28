@@ -1,0 +1,14 @@
+import re
+print("\n".join(i for i in re.split('[,.]', input()) if len(i)>0))
+
+#output= 100,000,000.000
+100
+000
+000
+000
+
+
+m = re.match(r'(?P<user>\w+)@(?P<website>\w+)\.(?P<extension>\w+)','keshav@hackerrank.com')
+m.groupdict()
+
+#output={'user': 'keshav', 'website': 'hackerrank', 'extension': 'com'}
