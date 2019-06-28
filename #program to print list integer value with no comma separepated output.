@@ -1,0 +1,6 @@
+#program to print list integer value with no comma separepated output.
+
+l=['1','2','3','4','5']
+l1=[1,2,3,4,5]
+for x in l1:
+    print(x,end='')
