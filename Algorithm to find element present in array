@@ -1,0 +1,11 @@
+def find_number(arr,k):
+    item=list(arr)
+    if k in item:
+        print('YES')
+    else:
+        print('NO')
+            
+
+find_number((1,2,3,4),5)
+
+OUTPUT : NO
