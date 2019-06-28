@@ -12,3 +12,45 @@ m = re.match(r'(?P<user>\w+)@(?P<website>\w+)\.(?P<extension>\w+)','keshav@hacke
 m.groupdict()
 
 #output={'user': 'keshav', 'website': 'hackerrank', 'extension': 'com'}
+
+
+A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
+A1 = range(10)
+A2 = sorted([i for i in A1 if i in A0])
+A3 = sorted([A0[s] for s in A0])
+print(A0)
+print(A3)
+for s in A0:
+    x=A0[s]
+print(x)
+
+
+{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+[1, 2, 3, 4, 5]
+5
+
+
+#shallow copy
+import copy
+list1=[1,2,3,4,5]
+list2=copy.copy(list1)
+
+
+list1.append('d')
+print(list1)
+print(list2)
+
+[1, 2, 3, 4, 5, 'd']
+[1, 2, 3, 4, 5]
+
+
+#Deep Copy
+import copy
+list1=[[1,2],3,4,5]
+list2=copy.deepcopy(list1)
+list2[0][1]='a'
+print(list2)
+print(list1)
+
+[[1, 'a'], 3, 4, 5]
+[[1, 2], 3, 4, 5]
