@@ -1,0 +1,15 @@
+###  Program for minimum of 3 numbers
+
+def min_number(a,b,c):
+    min=a if a<b and a<c else b if b<c else c
+    print("Minimum Value:",min)
+
+min_number(34,70,30)
+
+Minimum Value: 30
+
+def max_number(a,b,c):
+    max=a if a>b and a>c else b if b>c else c
+    print("Maximux Value:",max)
+    
+max_number(30,10,20)
