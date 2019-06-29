@@ -25,3 +25,22 @@ OUTPUT :
 5
 7
 9
+
+
+for i in range(1,100):
+    if i%9==0:
+        print(i)
+    else:
+        pass
+OUTPUT :
+9
+18
+27
+36
+45
+54
+63
+72
+81
+90
+99
