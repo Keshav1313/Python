@@ -1,0 +1,101 @@
+#Numeric functions
+
+# 1. absolute function - absolute function give you the distance of the value from 0.
+abs(5)
+abs(-6)
+
+OUTPUT :
+5
+6
+
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+    
+abs(4/5)
+
+
+OUTPUT :
+0.8
+
+round(3.7777687,3)
+3.778
+
+
+#for ceil ,floor ,trunc function we used to import math module.
+#ceil : function will give next higher integer.
+#floor : function will give next lower integer.
+#Truncate : it will truncate the value it will give only integer part.
+
+import math
+math.ceil(3.2)
+
+
+OUTPUT :
+4
+
+math.ceil(-3.4)
+ -3
+ 
+ import math
+math.floor(3.9)
+
+OUTPUT :
+3
+
+import math
+math.floor(-3.1)
+
+-4
+
+math.trunc(4.5)
+
+output:
+4
+
+ modf(...)
+        modf(x)
+        
+        Return the fractional and integer parts of x.  Both results carry the sign
+        of x and are floats.
+import math
+math.modf(12.99996654)
+
+OUTPUT:
+(0.9999665400000008, 12.0)
+
+
+  pow(...)
+        pow(x, y)
+        
+        Return x**y (x to the power of y).
+import math
+math.pow(2,4)
+
+OUTPUT:
+16.0
+
+
+log(...)
+        log(x[, base])
+        
+        Return the logarithm of x to the given base.
+        If the base not specified, returns the natural logarithm (base e) of x.
+import math
+math.log(10)
+
+OUTPUT:
+2.302585092994046
+
+
+log10(...)
+        log10(x)
+        
+        Return the base 10 logarithm of x.
+        
+ import math
+math.log10(10)
+
+OUTPUT:
+1.0
