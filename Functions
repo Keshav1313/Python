@@ -1,16 +1,34 @@
 #FUNCTIONS
 
 def func1():
-    n=10  #Local variable for func1
+    n=10                #Local variable for func1
     print('The value is :',n)
     
 def func2():
-    n=20  #local variable for func2
+    n=20                #local variable for func2
     print('The value is :',n)
-    func1()   #calling func1 in func2
+    func1()             #calling func1 in func2
     
 #main
 
+func2()
+
+OUTPUT :
+The value is : 20
+The value is : 10
+
+
+n=10                    #Global variable
+def func1():
+    print('The value is :',n)
+    
+def func2():
+    n=20                #when func2 is called it will give print the value of local variable of func2
+    print('The value is :',n)
+    func1()
+    
+    
+#main
 func2()
 
 OUTPUT :
