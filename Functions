@@ -34,3 +34,22 @@ func2()
 OUTPUT :
 The value is : 20
 The value is : 10
+
+
+var =10
+def func1():
+    var=var+1                '''the interpretor traet it as local variable so it will throw an 
+                            error with exception :UnboundLocalError: local variable 'var' referenced before assignment'''
+    print('The value of var :',var)
+    
+func1()
+
+For this we have to explicitly tell to python that it is global variable :
+
+var =10
+def func1():
+    global var
+    var=var+1
+    print('The value of var :',var)
+    
+func1()
