@@ -1,0 +1,18 @@
+#FUNCTIONS
+
+def func1():
+    n=10  #Local variable for func1
+    print('The value is :',n)
+    
+def func2():
+    n=20  #local variable for func2
+    print('The value is :',n)
+    func1()   #calling func1 in func2
+    
+#main
+
+func2()
+
+OUTPUT :
+The value is : 20
+The value is : 10
