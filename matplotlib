@@ -39,6 +39,9 @@ plt.ylabel('Voltage(mV)')
 plt.title('Cosine wave plot(cos(x))')
 plt.show()
 
+OUTPUT :
+
+
 
 #--------------------------------Categorical Plotting---------------------------------------------
 
