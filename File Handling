@@ -82,6 +82,7 @@ f.write('Learning\n')
 f.write('Python\n')
 print('Data written to the file Successfully.')
 
+
 OUTPUT:
 Data written to the file Successfully.
 
