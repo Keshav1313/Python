@@ -108,3 +108,16 @@ is
 learning
 Python with love
 
+'''The seek() and tell() methods:'''
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+print(f.tell(),end=' | ')
+print(f.read(40),end=' | ')
+print(f.tell(),end=' | ')
+print(f.read(25),end=' | ')
+print(f.tell(),end=' | ')
+f.close()
+
+
+OUTPUT:
+0 | Note: In the above program, data present | 40 |  in the 
+file will be ove | 66 | 
