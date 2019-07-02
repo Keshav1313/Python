@@ -1,0 +1,15 @@
+text_file=open('text.txt','w')
+text_file.write('Hi my name is Keshav Sinha.')
+text_file.close()
+
+text_file=open('text.txt','a')
+text_file.write('Hi my name is Keshav Sinha.')
+text_file.close()
+
+OUTPUT:
+Go and check the file where it is saved .
+The line write in code get added.
+
+
+If we want rename file or remove file then we have to use OS MODULE:
+
