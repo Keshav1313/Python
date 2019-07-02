@@ -201,4 +201,41 @@ The number lines : 3
 The number f character count : 226
 The number words count : 40
 
-
+------------------------------------------------------------------------------------------------------------------
+import csv
+with open(r'C:\Users\HP\Desktop\test.csv','w',newline='') as f:
+    w=csv.writer(f)
+    w.writerow(['Name','Age','Salary','City'])
+    n=int(input('Enter Employee number :'))
+    for i in range(n):
+        Name=input('Enter employee name:')
+        Age=input('Enter employee age :')
+        Salary=input('Enter employee Salary:')
+        City=input('Enter employee City:')
+        w.writerow([Name,Age,Salary,City])
+    print('Total employee data written to csv file successfully.')
+    
+    
+OUTPUT:
+Enter Employee number :5
+Enter employee name:keshav
+Enter employee age :25
+Enter employee Salary:500000
+Enter employee City:Bihar
+Enter employee name:Rishab
+Enter employee age :23
+Enter employee Salary:30000
+Enter employee City:Bareli
+Enter employee name:Zeeshan
+Enter employee age :25
+Enter employee Salary:45000
+Enter employee City:Ranchi
+Enter employee name:Prashant
+Enter employee age :26
+Enter employee Salary:35000
+Enter employee City:Motihari
+Enter employee name:Nikhlesh
+Enter employee age :26
+Enter employee Salary:40000
+Enter employee City:Jharkhand
+Total employee data written to csv file successfully.
