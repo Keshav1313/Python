@@ -136,7 +136,7 @@ with open(r'C:\Users\HP\Desktop\file.txt','r+') as f:
     print(text)
     
     
- OUTPUT:
+OUTPUT:
 Keshav
 is
 learning with love. Dream must be vision in day life
