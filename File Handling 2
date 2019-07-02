@@ -121,3 +121,30 @@ f.close()
 OUTPUT:
 0 | Note: In the above program, data present | 40 |  in the 
 file will be ove | 66 | 
+
+
+with open(r'C:\Users\HP\Desktop\file.txt','r+') as f:
+    text=f.read()
+    print(text,end='')
+    print('The current cursor point at :',f.tell())
+    f.seek(40)
+    print('The current cursor point at :',f.tell())
+    f.write('Dream must be vision in day life')
+    f.seek(0)
+    text=f.read()
+    print('Data After Modification')
+    print(text)
+    
+    
+ OUTPUT:
+Keshav
+is
+learning with love. Dream must be vision in day life
+The current cursor point at : 47
+The current cursor point at : 40
+Data After Modification
+Keshav
+is
+learning.Dream must be vision in day life
+
+
