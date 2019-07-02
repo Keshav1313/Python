@@ -1,0 +1,36 @@
+import math
+num=int(input('Please give the integer value :'))
+result=math.factorial(num)
+print(result)
+
+OUTPUT:
+Please give the integer value :5
+120
+
+Please give the integer value :-5
+
+The above program is normal if we go for negative input the it will throw an error with exception message.
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-3-625a95634755> in <module>
+      1 import math
+      2 num=int(input('Please give the integer value :'))
+----> 3 result=math.factorial(num)
+      4 print(result)
+
+ValueError: factorial() not defined for negative values
+---------------------------------------------------------------------------
+
+For this we are using user defined exceptions :
+
+import math
+num=int(input('Please give the integer value :'))
+try:
+    result=math.factorial(num)
+    print(result)
+except:
+    print('Cannot compute the factorial of negative numbers .')
+    
+OUTPUT:
+Please give the integer value :-5
+Cannot compute the factorial of negative numbers .
