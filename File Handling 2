@@ -148,3 +148,28 @@ is
 learning.Dream must be vision in day life
 
 
+'''Q. Write a program to check whether the given file exists or not. If it is
+available then print its content?'''
+
+import os,sys
+def file_exist(fname):
+    if os.path.isfile(fname):
+        print('File Exists:',fname)
+        f=open(fname,'r')
+    else:
+        print('File Doesnt Exist :',fname)
+        sys.exit(0)
+    print('The Content of the file :')
+    data=f.read()
+    print(data)
+
+    
+file_exist(r'C:\Users\HP\Desktop\keshav.txt')
+
+
+OUTPUT:
+File Exists: C:\Users\HP\Desktop\keshav.txt
+The Content of the file :
+Note: In the above program, data present in the 
+file will be overridden everytime if we run the program 
+Instead of overriding if we want append operation then we should openthe file as followsDream must be vision in day life
