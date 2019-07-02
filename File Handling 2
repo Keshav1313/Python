@@ -1,0 +1,27 @@
+f=open(r'C:\Users\HP\Desktop\keshav.txt','w')
+f.write('Note: In the above program, data present in the \n'
+          'file will be overridden everytime if we run the program \n'
+          'Instead of overriding if we want append operation then we should openthe file as follows.\n')
+          
+OUTPUT:          
+196
+
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+data=f.read()
+print(data)
+f.close()
+
+OUTPUT:
+Note: In the above program, data present in the 
+file will be overridden everytime if we run the program 
+Instead of overriding if we want append operation then we should openthe file as follows.
+
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+data=f.read(40)
+print(data)
+f.close()
+
+OOUTPUT:
+Note: In the above program, data present
+
+
