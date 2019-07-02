@@ -1,3 +1,5 @@
+#Creation of new file under write mode.
+
 text_file=open('text.txt','w')
 text_file.write('Hi my name is Keshav Sinha.')
 text_file.close()
@@ -13,3 +15,38 @@ The line write in code get added.
 
 If we want rename file or remove file then we have to use OS MODULE:
 
+import os
+os.rename(r'C:\Users\HP\Desktop\text.txt',r'C:\Users\HP\Desktop\keshav.txt')
+
+import os
+os.remove(r'C:\Users\HP\Desktop\keshav.txt')
+
+
+
+import os
+os.mkdir(r'C:\Users\HP\Desktop\Newfolder')
+>>> import os
+>>> os.getcwd()
+'C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python36'
+>>> import os
+>>> os.chdir(r'C:\Users\HP\Desktop\Newfolder')
+>>> import os
+>>> os.getcwd()
+'C:\\Users\\HP\\Desktop\\Newfolder'
+>>> import os
+>>> os.mkdir('keshav')
+
+>>> import os
+>>> os.chdir('C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python36')
+>>> import os
+>>> os.getcwd()
+'C:\\Users\\HP\\AppData\\Local\\Programs\\Python\\Python36'
+>>> import os
+>>> os.listdir()
+['DLLs', 'Doc', 'etc', 'include', 'Lib', 'libs', 'LICENSE.txt',
+'myfile.txt', 'NEWS.txt', 'openfunc.py', 'python.exe', 'python3.dll', 
+'python36.dll', 'pythonw.exe', 'readingtext.py', 'README.txt', 'Scripts', 'share',
+'tcl', 'Tools', 'vcruntime140.dll']
+
+>>> os.chdir(r'C:\Users\HP\Desktop\Newfolder')
+>>> os.rmdir('keshav')
