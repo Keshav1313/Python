@@ -239,3 +239,27 @@ Enter employee age :26
 Enter employee Salary:40000
 Enter employee City:Jharkhand
 Total employee data written to csv file successfully.
+
+
+-----------------------------EXCEL/CSV FILES-----------------------------------------------
+
+import csv
+f=open(r'C:\Users\HP\Desktop\test.csv','r') 
+r=csv.reader(f)
+
+#data=list(r)
+for line in r:
+    for word in line:
+        print(word,'   \t',end='')
+    print()
+        
+
+Name    	Age    	Salary    	City    	
+keshav    	25    	500000    	Bihar    	
+Rishab    	23    	30000    	Bareli    	
+Zeeshan    	25    	45000    	Ranchi    	
+Prashant    	26    	35000    	Motihari    	
+Nikhlesh    	26    	40000    	Jharkhand 
+
+
+
