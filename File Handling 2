@@ -10,7 +10,7 @@ f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
 data=f.read()
 print(data)
 f.close()
-
+---------------------------------------------------------------------------------------------------
 OUTPUT:
 Note: In the above program, data present in the 
 file will be overridden everytime if we run the program 
@@ -24,4 +24,87 @@ f.close()
 OOUTPUT:
 Note: In the above program, data present
 
+---------------------------------------------------------------------------------------------------
+
+#To read data line by line:
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+line1=f.readline()
+print(line1,end='')
+line2=f.readline()
+print(line2,end='')
+# line3=f.readline()
+# print(line3,end='')
+f.close()
+
+OUPUT:
+Note: In the above program, data present in the 
+file will be overridden everytime if we run the program 
+
+---------------------------------------------------------------------------------------------------
+
+'''To read all lines into list:'''
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+lines=f.readlines()
+print(type(lines))
+for line in lines:
+    print(line,end='')
+f.close()
+print(type(line))
+
+
+OUTPUT:
+<class 'list'>
+Note: In the above program, data present in the 
+file will be overridden everytime if we run the program 
+Instead of overriding if we want append operation then we should openthe file as follows.
+<class 'str'>
+
+
+f=open(r'C:\Users\HP\Desktop\keshav.txt','r')
+print(f.read(3))
+print(f.readline(),end='')
+print(f.read(5))
+print("Remaining Data")
+print(f.read())
+f.close()
+
+
+OUTPUT:
+Not
+e: In the above program, data present in the 
+file 
+Remaining Data
+will be overridden everytime if we run the program 
+Instead of overriding if we want append operation then we should openthe file as follows.
+
+__________________________________NOTES FOR WITHOPEN () ______________________________________________
+The with statement can be used while opening a file.We can use this to group file
+operation statements within a block.
+The advantage of with statement is it will take care closing of file,after completing all
+operations automatically even in the case of exceptions also, and we are not required to
+close explicitly.
+-------------------------------------------------------------------------------------------------------
+
+with open(r'C:\Users\HP\Desktop\file.txt','w') as f:
+    f.write('Keshav\n')
+    f.write('is\n')
+    f.write('learning\n')
+    f.write('Python with love\n')
+    print('Is file is closed :',f.closed)
+print('Is file is Closed:',f.closed)
+
+OUTPUT:
+Is file is closed : False
+Is file is Closed: True
+
+f=open(r'C:\Users\HP\Desktop\file.txt','r')
+data=f.read()
+print(data)
+f.close()
+
+OUTPUT:
+Keshav
+is
+learning
+Python with love
 
