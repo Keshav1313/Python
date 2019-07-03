@@ -212,4 +212,33 @@ ZeroDivisionError                         Traceback (most recent call last)
 ZeroDivisionError: division by zero
 
 
+#     *** Note: There is only one situation where finally block won't be executed ie whenever
+#         we are using os._exit(0) function.
+#         Whenever we are using os._exit(0) function then Python Virtual Machine itself will be
+#         shutdown.In this particular case finally won't be executed.
+
+import os
+try:
+    print('try')
+    os._exit(0)  #after executing this line kernel will get shut down. You have to restart the kernel again.
+except:
+    print('except')
+finally:
+    print('finally')
+    
+'''Note: os._exit(0)
+where 0 represents status code and it indicates normal termination
+There are multiple status codes are possible.'''
+
+
+
+try:
+    #print('try')
+    print(10/0)
+except ZeroDivisionerror:
+    print('Zero Division Error')
+finally:
+    print('finally')
+    
+    
 
