@@ -241,4 +241,49 @@ finally:
     print('finally')
     
     
+OUTPUT:
+finally
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-2-950e165c39d2> in <module>
+      2     #print('try')
+----> 3     print(10/0)
+      4 except ZeroDivisionerror:
+
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+NameError                                 Traceback (most recent call last)
+<ipython-input-2-950e165c39d2> in <module>
+      2     #print('try')
+      3     print(10/0)
+----> 4 except ZeroDivisionerror:
+      5     print('Zero Division Error')
+      6 finally:
+
+NameError: name 'ZeroDivisionerror' is not defined
+
+
+
+
+try:
+    print('try')
+    #print(10/0)
+except ValueError:
+    print('Value Error')
+finally:
+    print(10/0)
+    
+try
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-3-ccb60516437c> in <module>
+      5     print('Value Error')
+      6 finally:
+----> 7     print(10/0)
+
+ZeroDivisionError: division by zero
+
+
 
