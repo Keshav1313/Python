@@ -7,11 +7,51 @@ The errors which occurs because of invalid syntax are called syntax errors.
 Eg 1:
 x=10
 if x==10
-print("Hello")
+print("keshav")
 SyntaxError: invalid syntax
 Eg 2:
-print "Hello"
+print "keshav"
 SyntaxError: Missing parentheses in call to 'print'
 Note:
 Programmer is responsible to correct these syntax errors. Once all syntax errors are
 corrected then only program execution will be started.
+
+
+2. Runtime Errors:
+Also known as exceptions.
+While executing the program if something goes wrong because of end user input or
+programming logic or memory problems etc then we will get Runtime Errors.
+Eg: print(10/0) ==>ZeroDivisionError: division by zero
+print(10/"ten") ==>TypeError: unsupported operand type(s) for /: 'int' and 'str'
+x=int(input("Enter Number:"))
+print(x)
+D:\Python_classes>py test.py
+
+Enter Number:ten
+ValueError: invalid literal for int() with base 10: 'ten'
+
+
+Note: Exception Handling concept applicable for Runtime Errors but not for syntax errors
+
+
+--------------------------------------------Exception Handling -----------------------------------------------------------
+
+What is Exception:
+An unwanted and unexpected event that disturbs normal flow of program is called exception.
+
+Eg:
+ZeroDivisionError
+TypeError
+ValueError
+FileNotFoundError
+EOFError
+SleepingError
+TyrePuncturedError
+
+
+Eg:
+For example our programming requirement is reading data from remote file locating at
+London. At runtime if london file is not available then the program should not be
+terminated abnormally. We have to provide local file to continue rest of the program
+normally. This way of defining alternative is nothing but exception handling.
+
