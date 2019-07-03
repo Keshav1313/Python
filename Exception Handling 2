@@ -432,3 +432,29 @@ OUTPUT:
 try
 else
 finally
+
+
+
+# raise keyword
+
+class TooYoungException(Exception):
+    def __init__(self,arg):
+        self.msg=arg
+        
+        
+class TooOldException(Exception):
+    def __init__(self,arg):
+        self.msg=arg
+        
+age=int(input('Enter YOur age:'))
+if age>60:
+    raise TooOldException('Your age already crossed for marriage !')
+elif age<18:
+    raise TooYoungException('YOu are under age for marriage !')
+else:
+    print('You will get match details soon by email!!!')
+    
+    
+OUTPUT:
+Enter YOur age:15
+TooYoungException: YOu are under age for marriage !
