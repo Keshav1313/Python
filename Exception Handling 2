@@ -169,3 +169,19 @@ finally:
 OUTPUT:
 Keshav
 YOu are a good Boy.
+
+
+#Case-2: If there is an exception raised but handled:
+
+try:
+    print('try')
+    print(10/0)
+except ZeroDivisionError:
+    print('Zero Division Error')
+finally:
+    print('finally')
+    
+OUTPUT:
+try
+Zero Division Error
+finally
