@@ -185,3 +185,31 @@ OUTPUT:
 try
 Zero Division Error
 finally
+
+
+#Case-3: If there is an exception raised but not handled:
+
+try:
+    print('try')
+    print(10/0)
+except ValueError:
+    print('Value Error')
+finally:
+    print('finally')
+    
+outPUT:
+try
+finally
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-16-d8c32e388e3d> in <module>
+      3 try:
+      4     print('try')
+----> 5     print(10/0)
+      6 except ValueError:
+      7     print('Value Error')
+
+ZeroDivisionError: division by zero
+
+
+
