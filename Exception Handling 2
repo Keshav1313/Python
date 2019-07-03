@@ -150,3 +150,22 @@ File "<ipython-input-13-31544cd7d546>", line 7
     except ZeroDivisionError:
                        ^
 SyntaxError: default 'except:' must be last
+
+'''Finally Block'''
+'''we required some place to maintain clean up code which should be executed
+always irrespective of whether exception raised or not raised and whether exception
+handled or not handled. Such type of best place is nothing but finally block.
+Hence the main purpose of finally block is to maintain clean up code.'''
+
+#Case-1: If there is no exception
+
+try:
+    print('Keshav')
+except:
+    print('except')
+finally:
+    print('YOu are a good Boy.')
+    
+OUTPUT:
+Keshav
+YOu are a good Boy.
