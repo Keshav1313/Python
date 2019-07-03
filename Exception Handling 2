@@ -285,5 +285,30 @@ ZeroDivisionError                         Traceback (most recent call last)
 
 ZeroDivisionError: division by zero
 
+--------------------------------'''Nested try-except-finally blocks:'''---------------------------------------------
+'''General Risky code we have to take inside outer try block and too much risky code we
+    have to take inside inner try block. Inside Inner try block if an exception raised 
+    then inner except block is responsible to handle. If it is unable to handle then outer except block is
+    responsible to handle.'''
+
+try:
+    print('Outer Try block.')
+    try:
+        print('Inner try block')
+        print(10/0)
+    except ZeroDivisionError:
+        print('Zero Division Error - Inner except block')
+    finally:
+        print('Inner Finally Block')
+except:
+    print('Outer except Block')
+finally:
+    print('Outer finally Block.')
 
 
+OUTPUT:
+Outer Try block.
+Inner try block
+Zero Division Error - Inner except block
+Inner Finally Block
+Outer finally Block.
