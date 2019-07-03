@@ -82,3 +82,18 @@ please provide integer Value Only.
 Enter the value of x :10
 Enter the value of y :-10
 -1.0
+
+
+try:
+    x=int(input('Enter the value of x :'))
+    y=int(input('Enter the value of y :'))
+    print(x/y)
+except ArithmeticError:
+    print('ArithmaticError')
+except ZeroDivisionError:
+    print('ZeroDivisionError')
+    
+OUTPUT:
+Enter the value of x :10
+Enter the value of y :0
+ArithmaticError
