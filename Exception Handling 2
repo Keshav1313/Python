@@ -55,3 +55,30 @@ London. At runtime if london file is not available then the program should not b
 terminated abnormally. We have to provide local file to continue rest of the program
 normally. This way of defining alternative is nothing but exception handling.
 
+try:
+    x=int(input('Enter the value of x :'))
+    y=int(input('Enter the value of y :'))
+    print(x/y)
+except ZeroDivisionError:
+    print('Cant Divivde with Zero')
+except ValueError:
+    print('please provide integer Value Only.')
+    
+    
+OUTPUT:
+
+Enter the value of x :10
+Enter the value of y :5
+2.0
+
+Enter the value of x :10
+Enter the value of y :0
+Cant Divivde with Zero
+
+Enter the value of x :10
+Enter the value of y :ten
+please provide integer Value Only.
+
+Enter the value of x :10
+Enter the value of y :-10
+-1.0
