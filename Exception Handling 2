@@ -312,3 +312,123 @@ Inner try block
 Zero Division Error - Inner except block
 Inner Finally Block
 Outer finally Block.
+
+
+try:
+    print('Outer Try block.')
+    try:
+        print('Inner try block')
+        print(10/0)
+    except ZeroDivisionError:
+        print('Zero Division Error - Inner except block')
+    finally:
+        print('Inner Finally Block')
+    print(10/0)
+except ZeroDivisionError:
+    print('ZeroDivisionError-Outer except Block')
+finally:
+    print('Outer finally Block.')
+    
+OUPUT:
+Outer Try block.
+Inner try block
+Zero Division Error - Inner except block
+Inner Finally Block
+ZeroDivisionError-Outer except Block
+Outer finally Block.
+
+
+
+try:
+    print('Outer Try block.')
+    try:
+        print('Inner try block')
+        print(10/0)
+    except ZeroDivisionError:
+        print('Zero Division Error - Inner except block')
+    finally:
+        print('Inner Finally Block')
+    print(10/0)
+except ZeroDivisionError:
+    print('ZeroDivisionError-Outer except Block')
+finally:
+    print('Outer finally Block.')
+print('keshav')
+print(10/0) ---error yaha ha
+
+
+Outer Try block.
+Inner try block
+Zero Division Error - Inner except block
+Inner Finally Block
+ZeroDivisionError-Outer except Block
+Outer finally Block.
+keshav
+
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-10-6732206ba7c1> in <module>
+     14     print('Outer finally Block.')
+     15 print('keshav')
+---> 16 print(10/0)
+
+ZeroDivisionError: division by zero
+
+
+
+try:
+    print('Outer Try block.')
+    try:
+        print('Inner try block')
+        print(10/0)
+    except ValueError:
+        print('Zero Division Error - Inner except block')
+    finally:
+        print('Inner Finally Block')
+except ZeroDivisionError:
+    print('ZeroDivisionError-Outer except Block')
+finally:
+    print('Outer finally Block.')
+    
+OUTPUT:
+Outer Try block.
+Inner try block
+Inner Finally Block
+ZeroDivisionError-Outer except Block
+Outer finally Block.
+
+
+
+---------------------------   else block with try-except-finally:-----------------------------------------
+
+try:
+    print('try')
+    print(10/0)
+except:
+    print('except')
+else:
+    print('else')
+finally:
+    print('finally')
+    
+OUTPUT:
+try
+except
+finally
+
+
+try:
+    print('try')
+    #print(10/0)
+except:
+    print('except')
+else:
+    print('else')
+finally:
+    print('finally')
+    
+    
+OUTPUT:
+try
+else
+finally
