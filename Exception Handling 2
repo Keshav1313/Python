@@ -1,0 +1,17 @@
+In any programming language there are 2 types of errors are possible.
+1. Syntax Errors
+2. Runtime Errors
+
+1. Syntax Errors:
+The errors which occurs because of invalid syntax are called syntax errors.
+Eg 1:
+x=10
+if x==10
+print("Hello")
+SyntaxError: invalid syntax
+Eg 2:
+print "Hello"
+SyntaxError: Missing parentheses in call to 'print'
+Note:
+Programmer is responsible to correct these syntax errors. Once all syntax errors are
+corrected then only program execution will be started.
