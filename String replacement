@@ -10,3 +10,67 @@ print(output)
 
 Input : Enter some string : keshav chandan raja
 raja chandan keshav
+
+
+1.)
+s=input('Enter some string :')
+l=s.split()
+l1=[]
+for x in l:
+    l1.append(x[::-1])
+    output=' '.join(l1)
+print(output)
+
+Enter some string :keshav
+vahsek
+
+2.)
+s=input('Enter some string: ')
+i=len(s)-1
+target=''
+while i>=0:
+    target=target+s[i]
+    i=i-1
+print(target)
+
+Enter some string: keshav
+vahsek
+
+
+3.)
+s=input('Enter some string: ')
+i=len(s)-1
+target=''
+for i in range(len(s)-1,-1,-1):
+    target=target+s[i]
+print(target)
+
+Enter some string: keshav
+vahsek
+
+4.)
+def reverse_func(s):
+    s1=s.split()
+    s2=[]
+    for i in s1:
+        s2.append(i[::-1])
+        output=''.join(s2)
+    print(output)
+    
+reverse_func('keshav')
+
+
+5.)
+s='keshav'
+s1=[]
+for i in range(len(s)-1,-1,-1):
+    s1.append(s[i])
+    output=''.join(s1)
+print(output)
+
+
+
+
+
+
+
