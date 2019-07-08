@@ -1,0 +1,46 @@
+def repeated_string(s):
+    temp_var=''
+    for i in range (len(s)):
+        if s[i] not in temp_var:
+            temp_var+=s[i]
+            print(f'{s[i]} : {s.count(s[i])}')
+    
+        
+        
+repeated_string('Hello keshav')
+
+output:
+H : 1
+e : 2
+l : 2
+o : 1
+  : 1
+k : 1
+s : 1
+h : 1
+a : 1
+v : 1
+
+def repeated_string(s):
+    temp_var=''
+    i=0
+    while i<len(s):
+        if s[i] not in temp_var:
+            temp_var+=s[i]
+            print(f'{s[i]} : {s.count(s[i])}')
+        i=i+1
+        
+        
+repeated_string('Hello keshav')
+
+output:
+H : 1
+e : 2
+l : 2
+o : 1
+  : 1
+k : 1
+s : 1
+h : 1
+a : 1
+v : 1
