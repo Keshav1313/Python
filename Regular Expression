@@ -54,3 +54,15 @@ print(list1)
 
 [[1, 'a'], 3, 4, 5]
 [[1, 2], 3, 4, 5]
+
+
+Important functions of re module:
+1. match()
+2. fullmatch()
+3. search()
+4.findall()
+5.finditer()
+6. sub()
+7.subn()
+8. split()
+9. compile()
