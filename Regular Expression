@@ -66,3 +66,82 @@ Important functions of re module:
 7.subn()
 8. split()
 9. compile()
+
+#match()
+import re
+def match_at_start(s,target):
+    m=re.match(s,target)
+    if m!=None:
+        print('Match is available at the start of the string.')
+        print(f'start index : {m.start()}, and end index : {m.end()}')
+    else:
+        print('MAtch is not available at start of the string.')
+        
+        
+match_at_start('hello','hello this is AI world.')
+print('------------------------------------------------')
+match_at_start('k','keshav')
+print('------------------------------------------------')
+match_at_start('k','chandan')
+
+OuPUT:
+Match is available at the start of the string.
+start index : 0, and end index : 5
+------------------------------------------------
+Match is available at the start of the string.
+start index : 0, and end index : 1
+------------------------------------------------
+MAtch is not available at start of the string.
+
+
+#FULLMATCH
+import re
+def fullmatch_string(s,target):
+    m=re.fullmatch(s,target)
+    if m!=None:
+        print('There is full match of the sting in target.')
+    else:
+        print('There is no full match')
+        
+fullmatch_string('python','Learning python is love')
+fullmatch_string('abab','abab')
+
+OUTPUT:
+
+There is no full match
+There is full match of the sting in target.
+
+#search
+
+import re
+def search_string(s,target):
+    m=re.search(s,target)
+    if m!=None:
+        print('match is available :')
+        print(f'First occurence of the match index : {m.start()} and end index : {m.end()}')
+    else:
+        print('Match is not available')
+        
+search_string('ab','abaaabc')
+search_string('ab','cdefaab')
+
+OUtput:
+match is available :
+First occurence of the match index : 0 and end index : 2
+match is available :
+First occurence of the match index : 5 and end index : 7
+
+
+#findall
+import re
+def findall_func(s,target):
+    m=re.findall(s,target)
+    output=''.join(m)
+    print(output)
+    
+    
+findall_func('python','i love to learn python')
+
+
+output:
+python
