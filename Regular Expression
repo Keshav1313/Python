@@ -145,3 +145,21 @@ findall_func('python','i love to learn python')
 
 output:
 python
+
+
+
+#finditer (start(), end(), group())
+
+import re
+def finditer_func(s,target):
+    matcher=re.finditer(s,target)
+    for match in matcher:
+        print(f'The starting match index : {match.start()} ending index : {match.end()} matched string : {match.group()}')
+              
+finditer_func('ab','cdabaaab')
+
+OUTPUT:
+The starting match index : 2 ending index : 4 matched string : ab
+The starting match index : 6 ending index : 8 matched string : ab
+
+
