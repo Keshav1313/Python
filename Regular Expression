@@ -163,3 +163,90 @@ The starting match index : 2 ending index : 4 matched string : ab
 The starting match index : 6 ending index : 8 matched string : ab
 
 
+#sub (substitute or replacement)
+#  re.sub(regex,replacement,targetstring)
+
+import re
+def sub_func(s,s1,target):
+    m=re.sub(s,s1,target)
+    print(m)
+    
+    
+sub_func('ab','#','defabcdabk')
+sub_func('b','$','aabaabaab')
+sub_func('b',',','aabaabaab')
+
+OUTPUT:
+def#cd#k
+aa$aa$aa$
+aa,aa,aa,
+
+
+
+# subn 
+
+import re
+def subn_func(reg,replace,target):
+    m=re.subn(reg,replace,target)
+    print(m)
+    print('Regex:',reg)
+    print('The result of string :',m[0])
+    print('The number of replacement:',m[1])
+    
+
+subn_func('ab','#','defabcdabk')
+print('------------------------------')
+subn_func('b','$','aabaabaab')
+print('------------------------------')
+subn_func('b',',','aabaabaab')
+
+
+OUTPUT:
+# subn 
+
+import re
+def subn_func(reg,replace,target):
+    m=re.subn(reg,replace,target)
+    print(m)
+    print('Regex:',reg)
+    print('The result of string :',m[0])
+    print('The number of replacement:',m[1])
+    
+
+subn_func('ab','#','defabcdabk')
+print('------------------------------')
+subn_func('b','$','aabaabaab')
+print('------------------------------')
+subn_func('b',',','aabaabaab')
+
+# subn 
+​
+import re
+def subn_func(reg,replace,target):
+    m=re.subn(reg,replace,target)
+    print(m)
+    print('Regex:',reg)
+    print('The result of string :',m[0])
+    print('The number of replacement:',m[1])
+    
+​
+subn_func('ab','#','defabcdabk')
+print('------------------------------')
+subn_func('b','$','aabaabaab')
+print('------------------------------')
+subn_func('b',',','aabaabaab')
+​
+('def#cd#k', 2)
+Regex: ab
+The result of string : def#cd#k
+The number of replacement: 2
+------------------------------
+('aa$aa$aa$', 3)
+Regex: b
+The result of string : aa$aa$aa$
+The number of replacement: 3
+------------------------------
+('aa,aa,aa,', 3)
+Regex: b
+The result of string : aa,aa,aa,
+The number of replacement: 3
