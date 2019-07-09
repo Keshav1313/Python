@@ -250,3 +250,40 @@ The number of replacement: 3
 Regex: b
 The result of string : aa,aa,aa,
 The number of replacement: 3
+
+
+
+
+------------------------------Update version code of SUBN() ----------------------------------------
+# subn 
+
+import re
+def subn_func(reg,replace,target):
+    m=re.subn(reg,replace,target)
+    
+    print('Regex:',reg,'---','Repalcement:',replace,'---','Target string:',target)
+    print('The result of string :',m[0])
+    print('The number of replacement:',m[1])
+    
+
+subn_func('ab','#','defabcdabk')
+print('------------------------------')
+subn_func('b','$','aabaabaab')
+print('------------------------------')
+subn_func('b',',','aabaabaab')
+
+
+
+OUTPUT:
+
+Regex: ab --- Repalcement: # --- Target string: defabcdabk
+The result of string : def#cd#k
+The number of replacement: 2
+------------------------------
+Regex: b --- Repalcement: $ --- Target string: aabaabaab
+The result of string : aa$aa$aa$
+The number of replacement: 3
+------------------------------
+Regex: b --- Repalcement: , --- Target string: aabaabaab
+The result of string : aa,aa,aa,
+The number of replacement: 3
