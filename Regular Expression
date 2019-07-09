@@ -287,3 +287,17 @@ The number of replacement: 3
 Regex: b --- Repalcement: , --- Target string: aabaabaab
 The result of string : aa,aa,aa,
 The number of replacement: 3
+
+
+# split it return list
+
+import re
+m=re.split(',','sunny,bunny,hunny,munny')
+print(m)
+for i in m:
+    print(i,end=' ')
+    
+    
+OUTPUT:
+['sunny', 'bunny', 'hunny', 'munny']
+sunny bunny hunny munny 
