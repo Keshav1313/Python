@@ -36,3 +36,8 @@ d={100:"durga",200:"ravi",300:"shiva"}
 print(d.keys())
 print(d.values())
 print(d)
+
+OUTPUT:
+dict_keys([100, 200, 300])
+dict_values(['durga', 'ravi', 'shiva'])
+{100: 'durga', 200: 'ravi', 300: 'shiva'}
