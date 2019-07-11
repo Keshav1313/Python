@@ -1,0 +1,27 @@
+rec={}
+n=int(input('Enter the number of student for details:'))
+i=1
+while i<=n:
+    name=input('Enter name of student:')
+    marks=input('Enter marks of student:')
+    rec[name]=marks
+    i=i+1
+print('Name of student','\t','% of marks')
+for x in rec:
+    print('\t',x,'\t\t',rec[x])
+
+
+NOTE: IT WILL NOT EXECUTE IN JUPYTER NOTEBOOK BUT IT WILL EXECUTE IN PYCHARM AND IDE OF PYTHON.
+
+OUTPUT:
+Enter the number of student for details:3
+Enter name of student:keshav
+Enter marks of student:68
+Enter name of student:ram
+Enter marks of student:65
+Enter name of student:shyam
+Enter marks of student:70
+Name of student 	 % of marks
+	 keshav 		      68
+	 ram 		          65
+	 shyam 		        70
